@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #990A00;
+    --secondary-color: #660E00;
+    --tertiary-color: #FFC873;
+    --light-color: #F1EADF;
+    --text-color: white;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: #990A00;
+    color: #333;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+main div.content{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main div.subtitle{
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+main div.social{
+    background-color: var(--secondary-color);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1, h4 {
+    color: var(--light-color);
+}
+h4{
+    font-weight: 400;
+}
