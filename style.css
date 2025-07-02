@@ -30,13 +30,29 @@ main{
 main div.content{
     padding: 40px;
     display: flex;
+}
+
+main div.image-container{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 100%;
+}  
+main div.content > div{
+    padding: 40px;
+    display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 850%;
 }
+
 main div.subtitle{
     padding: 5px 10px;
     background-color: var(--secondary-color);
     border-radius: 20px;
+    width: fit-content;
 }
 
 main div.social{
