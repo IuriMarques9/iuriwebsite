@@ -107,11 +107,13 @@ h4{
 
 /*Media Queries*/
 @media (max-width: 800px) {
+    main{
+        flex-direction: column;
+        height: auto;
+    }
     main div.content{
         flex-direction: column;
         align-items: center;
-    }
-    main div.content{
         padding: 40px 0;
         justify-content: space-between;
     }
@@ -123,5 +125,8 @@ h4{
     }
     img{
         max-width: 600px;
+    }
+    main div.social{
+        flex-direction: row;
     }
 }
