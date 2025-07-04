@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 :root{
     --primary-color: #990A00;
     --secondary-color: #660E00;
@@ -20,6 +21,15 @@ body{
     font-variation-settings: "wdth" 100;
     background-color: #990A00;
     color: #333;
+}
+
+a{
+    text-decoration-color: white;
+    color: white;
+}
+a:hover{
+    text-decoration-color: var(--light-color);
+    color: var(--light-color);
 }
 
 main{
@@ -41,18 +51,34 @@ img{
     width: 100%;
 }  
 main div.content > div{
-    padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 850%;
+    width: 80%;
+    max-height: 600px;
 }
 
 main div.subtitle{
     padding: 5px 10px;
     background-color: var(--secondary-color);
     border-radius: 20px;
+    margin-bottom: 40px;
     width: fit-content;
+}
+
+main div.info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: fit-content;
+}
+
+main div.info-container div.info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+    color: white;
 }
 
 main div.social{
@@ -64,9 +90,38 @@ main div.social{
     gap: 20px;
 }
 
+main div.social a:hover{
+    transform: scale(1.2);
+}
+
 h1, h4 {
     color: var(--light-color);
 }
 h4{
     font-weight: 400;
+}
+
+.scale:hover {
+    transform: scale(1.2);
+}
+
+/*Media Queries*/
+@media (max-width: 800px) {
+    main div.content{
+        flex-direction: column;
+        align-items: center;
+    }
+    main div.content{
+        padding: 40px 0;
+        justify-content: space-between;
+    }
+    main div.info-container{
+        gap: 30px;
+    }
+    main div.subtitle{
+        margin-bottom: 10px;
+    }
+    img{
+        max-width: 600px;
+    }
 }
